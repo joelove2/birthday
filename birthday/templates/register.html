@@ -1,7 +1,13 @@
+
+
+
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="col-md-6 offset-md-3 bg-primary">
+
+
+
+ <div class="col-md-6 offset-md-3 bg-dark">
     <h1>Birthday Registration</h1>
     <br/>
     
@@ -16,40 +22,12 @@
         <div class="w-full py-2 px-3 rounded-xl">Registration Type:  {{ form.registration_type }}</div>
        
         </div>
-           
-          <button type="submit" class="btn btn-primary text-centre">Register</button>
+        <div class="d-grid">
+          <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+         
         </form>
     </div>
-    
-
-
-<!-- <h2>Birthday Party Registration</h2>
-<form method="post">
-    {% csrf_token %}
-        <br>
-        
-        <div class="w-full py-2 px-3 rounded-xl">
-           
-          Name:  {{ form.name }}
-        </div>
-        <div class="w-full py-2 px-3 rounded-xl">
-           
-          Phone Number:  {{ form.phone_number }}
-        </div>
-        <div class="col-6 p-2">
-           
-          Email:  {{ form.name }}
-        </div>
-        <div class="col-6 p-2">
-           
-            {{ form.registration_type }}
-        </div>
-       <div class="col-6 p-2">
-        <button type="submit" class="bg-primary text-centre">Register</button>
-       </div>
-        
-    </form>   -->
-
     
 {% endblock %}
 

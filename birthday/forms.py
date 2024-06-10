@@ -9,6 +9,10 @@ class ParticipantForm(forms.ModelForm):
         fields = ['name', 'phone_number', 'email', 'registration_type']
        
     widgets = {
-            'registration_type': forms.Select(choices=Participant.REGISTRATION_TYPES),
+        'name': forms.TextInput(attrs={'class':'form-control'}),
+        'phone_number': forms.NumberInput(attrs={'class':'form-control'}),
+        'email': forms.EmailInput(attrs={'class':'form-control'}),
+
+        'registration_type': forms.Select(choices=Participant.REGISTRATION_TYPES),
         }
     
