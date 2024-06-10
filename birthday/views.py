@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from .forms import ParticipantForm
-from .models import Participant
+#from .models import Participant
 
 
 def home(request):
